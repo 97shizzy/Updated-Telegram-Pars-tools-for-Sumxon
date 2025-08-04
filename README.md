@@ -38,6 +38,6 @@
 ## 🚀 Установка
 
 ```bash
-git clone https://github.com/yourusername/telegram-user-parser.git
+git clone https://github.com/97shizzy/Updated-Telegram-Pars-tools-for-Sumxon
 cd telegram-user-parser
 pip install telethon PySide6 tabulate
