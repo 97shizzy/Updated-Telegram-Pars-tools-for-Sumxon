@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Parser tool for Samoxun</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;
+color: black</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutTopButtons">
+     <item>
+      <widget class="QPushButton" name="btnStart">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+       background-color: #4285f4;
+       color: white;
+       border: 1px solid #4285f4;
+		border-radius: 5px
+     }
+     QPushButton:hover {
+       background-color: #3a7ae8;
+     }
+     QPushButton:pressed {
+       background-color: #3367d6;
+     }</string>
+       </property>
+       <property name="text">
+        <string>Запуск</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSettings">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+       background-color: #4285f4;
+       color: white;
+       border: 1px solid #4285f4;
+		border-radius: 5px
+     }
+     QPushButton:hover {
+       background-color: #3a7ae8;
+     }
+     QPushButton:pressed {
+       background-color: #3367d6;
+     }</string>
+       </property>
+       <property name="text">
+        <string>Настройки</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="pageStart">
+      <property name="minimumSize">
+       <size>
+        <width>780</width>
+        <height>500</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>781</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QPushButton" name="btnStart_2">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+       background-color: #4285f4;
+       color: white;
+       border: 1px solid #4285f4;
+		border-radius: 5px;
+		font-size: 30px
+     }
+     QPushButton:hover {
+       background-color: #3a7ae8;
+     }
+     QPushButton:pressed {
+       background-color: #3367d6;
+     }</string>
+          </property>
+          <property name="text">
+           <string>Начать парсинг чатов</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>781</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(72, 117, 147);
+color: black;
+border: 1.5px solid #4285f4;
+border-radius: 15px;
+font-size: 15px;
+padding: 5px</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="plainText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="pageSettings">
+      <property name="minimumSize">
+       <size>
+        <width>780</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>781</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+         <widget class="QLabel" name="label">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: black;
+font: 350 15pt &quot;Bahnschrift&quot;;</string>
+          </property>
+          <property name="text">
+           <string>API_ID</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignTop">
+         <widget class="QLineEdit" name="lineApi">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit, QTextEdit {
+       background-color: white;
+       border: 1px solid #ddd;
+       border-radius: 6px;
+       padding: 8px;
+       font-size: 17px;
+     }
+     QLineEdit:focus, QTextEdit:focus {
+       border: 1px solid #4285f4;
+     }</string>
+          </property>
+          <property name="placeholderText">
+           <string>987654</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>90</y>
+         <width>781</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: black;
+font: 350 15pt &quot;Bahnschrift&quot;;</string>
+          </property>
+          <property name="text">
+           <string>API_HASH</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignTop">
+         <widget class="QLineEdit" name="lineHash">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit, QTextEdit {
+       background-color: white;
+       border: 1px solid #ddd;
+       border-radius: 6px;
+       padding: 8px;
+       font-size: 17px;
+     }
+     QLineEdit:focus, QTextEdit:focus {
+       border: 1px solid #4285f4;
+     }</string>
+          </property>
+          <property name="placeholderText">
+           <string>ac815c781c187c518c715c</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>781</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: black;
+font: 350 15pt &quot;Bahnschrift&quot;;</string>
+          </property>
+          <property name="text">
+           <string>PHONE</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="linePhone">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit, QTextEdit {
+       background-color: white;
+       border: 1px solid #ddd;
+       border-radius: 6px;
+       padding: 8px;
+       font-size: 17px;
+     }
+     QLineEdit:focus, QTextEdit:focus {
+       border: 1px solid #4285f4;
+     }</string>
+          </property>
+          <property name="placeholderText">
+           <string>+1234567789</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>230</y>
+         <width>781</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+         <widget class="QLabel" name="label_4">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: black;
+font: 350 15pt &quot;Bahnschrift&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CHAT_ID</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignTop">
+         <widget class="QLineEdit" name="lineChat">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit, QTextEdit {
+       background-color: white;
+       border: 1px solid #ddd;
+       border-radius: 6px;
+       padding: 8px;
+       font-size: 17px;
+     }
+     QLineEdit:focus, QTextEdit:focus {
+       border: 1px solid #4285f4;
+     }</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>@Username or -12312839712313</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>360</y>
+         <width>781</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QPushButton" name="btnSave">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+       background-color: #4285f4;
+       color: white;
+       border: 1px solid #4285f4;
+		border-radius: 5px
+     }
+     QPushButton:hover {
+       background-color: #3a7ae8;
+     }
+     QPushButton:pressed {
+       background-color: #3367d6;
+     }</string>
+          </property>
+          <property name="text">
+           <string>Сохранить настройки</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="btnClear">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>320</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+       background-color: #4285f4;
+       color: white;
+       border: 1px solid #4285f4;
+		border-radius: 5px
+     }
+     QPushButton:hover {
+       background-color: #3a7ae8;
+     }
+     QPushButton:pressed {
+       background-color: #3367d6;
+     }</string>
+       </property>
+       <property name="text">
+        <string>Отчистить</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
