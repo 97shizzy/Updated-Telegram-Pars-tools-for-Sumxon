@@ -39,5 +39,5 @@
 
 ```bash
 git clone https://github.com/97shizzy/Updated-Telegram-Pars-tools-for-Sumxon.git
-cd telegram-user-parser
+cd Updated-Telegram-Pars-tools-for-Sumxon-main
 pip install telethon PySide6 tabulate
